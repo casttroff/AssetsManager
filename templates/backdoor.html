@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>BACKDOOR!</h1>
+<script>    
+    
+    function askpswrd(){
+        inputPassword=prompt("Ingrese la contraseña para ingresar")
+
+    }
+    askpswrd()
+
+    if (inputPassword=="Meli.2020"){
+        alert("Contraseña Correcta")
+    } else {
+        askpswrd()
+        alert("Contraseña Incorrecta")
+    }
+</script>
+{% endblock%}

@@ -1,0 +1,48 @@
+
+  {% extends "layout.html" %}
+
+  {% block content %}
+  
+  <img src="/static/img/logo.png" alt="mercadoLibreLogo" width="200px">
+
+    <h1>Hola! Qué bueno verte!</h1>
+
+    <form action="{{ url_for('success') }}" method="POST">
+        <div class="form-group">
+            <label for="serialNumber">Serial Number</label>
+            <input type="text" class="form-control" id="serialNumber" placeholder="Escribilo o Escanealo acá!" autofocus required name="serialNumber"  value={{request.form.serialNumber}}>
+          </div>
+          <div class="form-group">
+                <label for="nombreWms">Tu usuario de WMS</label>
+                <input type="email" class="form-control" id="wmsAccount" placeholder="Escribilo o Escanealo acá!" required name="wmsAccount" value={{request.form.wmsAccount}}>
+          </div>
+          <div class="form-group">
+                <label for="status">Estado del Dispositivo</label>
+                <input type="number" class="form-control" id="deviceState" placeholder="1 (Entrega) /  2 (Devolución) / 3 (Devolución dañado)" required name="deviceState" value={{request.form.deviceState}}>
+          </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+        <!-- MODAL -->
+      
+      <!-- Agregar al submit  data-toggle="modal" data-target="#successModal" -->
+      <!-- <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                Todo listo! 
+                <br>
+                Que tengas un buen día! 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      
+      </form>
+
+
+      {% endblock%}

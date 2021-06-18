@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body, .modal-body, .modal-footer{   
+   background-color:rgb(234, 214, 72);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Lato', sans-serif;
+}
+
+
+
+.modal-body{
+    color: 	#162c66;
+    font-size: 29px;
+}
+
+input{
+    border-radius: 15px;
+}
+
+
+h1{
+    color: 	#162c66;
+}
+
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form input {
+    text-align: center;
+    width: 420px !important;
+    
+}
+
+form button{
+    background-color: #162c66 !important
+}
+
+
+#navbarMenu{
+    background-color: #162c66 !important
+}   
+
+#pongImage{
+    width: 400px;
+    border: solid 2px rgb(0,0,0);
+    padding: 5px;
+}

@@ -1,0 +1,26 @@
+
+Asset Manager V.1.1
+
+
+Como Levantar 
+
+Para ejecutar es necesario tener python 3.xxx instalado, junto con PIP y FLASK (en Cmd correr "Python --version" y "pip --version")
+En caso de no tenerlo bajar Python 3.xxx  https://www.python.org/ verificar que instale el PIP 
+Luego en consola ejecutar el comando "pip install flask"
+Luego por consola ir a la carpeta donde estan los archivos y ejecutar "python index.py" 
+La página comenzara a correr por defecto en la siguiente direccion http://127.0.0.1:5000/
+
+Agregados: 
+
+- Si se escribe la direccion /ping devuelve una pagina pong
+
+- Toma los valores del InputHTML y los devuelve en un print() por python, a futuro ver como fusionarlos con el desarrollo de Diego
+
+- Se agregó /backdoor con un sistema super básico que te pide una contraseña (xx) para poder visualizar la página  [ falta desarrollo ]
+
+
+
+
+Agregar a Futuro :
+
+- Pantalla reportes  tabla
